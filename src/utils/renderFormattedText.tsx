@@ -5,27 +5,31 @@ export const renderFormattedText = (text: string) => {
   const hashtagPattern = /(#\w+)/g;
 
   const parts = text.split(/(\s+)/).map((part, index) => {
+    const renderClassesForColor = (color: string) => {
+      return `px-1 rounded-md bg-${color}-200 text-${color}-600`;
+    };
+
     if (emailPattern.test(part)) {
       return (
-        <span key={index} className="text-yellow-500">
+        <span key={index} className={renderClassesForColor("yellow")}>
           {part}
         </span>
       );
     } else if (linkPattern.test(part)) {
       return (
-        <a href={part} key={index} className="text-cyan-500">
+        <a href={part} key={index} className={renderClassesForColor("cyan")}>
           {part}
         </a>
       );
     } else if (mentionPattern.test(part)) {
       return (
-        <span key={index} className="text-green-500">
+        <span key={index} className={renderClassesForColor("purple")}>
           {part}
         </span>
       );
     } else if (hashtagPattern.test(part)) {
       return (
-        <span key={index} className="text-purple-500">
+        <span key={index} className={renderClassesForColor("green")}>
           {part}
         </span>
       );
