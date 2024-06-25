@@ -7,6 +7,7 @@ import SunSvg from "../assets/sun.svg";
 import CircleSvg from "../assets/circle.svg";
 import { Button } from "./Button";
 import clsx from "clsx";
+import { useTaskStore } from "../services/task";
 
 export const TextField = () => {
   const [text, setText] = useState("");
@@ -15,8 +16,16 @@ export const TextField = () => {
 
   const isDisabled = text === "";
 
+  const addTask = useTaskStore((state) => state.add);
+
+  const handleAdd = () => {
+    addTask(text);
+    setText("");
+    inputRef.current?.focus();
+  };
+
   return (
-    <div className="pt-14 px-14">
+    <div className="pt-14">
       <div
         className={`w-full flex items-center rounded-md border px-4 pb-8 pt-2 ${
           focused ? "border-gray-200 shadow" : "border-transparent"
@@ -33,6 +42,7 @@ export const TextField = () => {
           onFocus={() => {
             setFocused(true);
           }}
+          onKeyDown={(e) => e.key === "Enter" && handleAdd()}
         />
       </div>
       <div
@@ -96,6 +106,7 @@ export const TextField = () => {
           color="primary"
           label="Ok"
           disabled={isDisabled}
+          onClick={handleAdd}
         />
       </div>
     </div>
