@@ -1,8 +1,10 @@
+import { TextField } from "./components/TextField";
+
 function App() {
   return (
-    <>
-      <div className="mt-14 ml-14 w-full h-10"></div>
-    </>
+    <div className="max-w-full w-screen">
+      <TextField />
+    </div>
   );
 }
 
