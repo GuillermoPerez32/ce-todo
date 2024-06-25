@@ -13,9 +13,9 @@ export const renderFormattedText = (text: string) => {
       );
     } else if (linkPattern.test(part)) {
       return (
-        <span key={index} className="text-cyan-500">
+        <a href={part} key={index} className="text-cyan-500">
           {part}
-        </span>
+        </a>
       );
     } else if (mentionPattern.test(part)) {
       return (
