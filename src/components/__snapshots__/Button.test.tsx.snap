@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Button /> > renders button with label 1`] = `
+<div>
+  <button
+    class="flex items-center justify-center rounded-md focus:outline-none py-1 px-3 gap-2 cursor-pointer transition-all undefined bg-blue-500 text-white"
+  >
+    Click me
+  </button>
+</div>
+`;

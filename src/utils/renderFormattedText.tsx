@@ -43,7 +43,7 @@ export const renderFormattedText = (text: string) => {
         </span>
       );
     } else {
-      return <span key={index}>{part}</span>;
+      return part;
     }
   });
 

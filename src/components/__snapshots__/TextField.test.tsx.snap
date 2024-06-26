@@ -1,0 +1,109 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<TextField /> > renders TextField with label 1`] = `
+<div>
+  <div
+    class="pt-14"
+  >
+    <div
+      class="w-full flex items-center rounded-md border px-4 pb-8 pt-2 border-transparent"
+    >
+      <img
+        alt="add task"
+        src="/src/assets/plus-square.svg"
+      />
+      <input
+        class="focus:outline-none px-2 w-full h-full"
+        placeholder="Type to add a new task"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="p-2 shadow mt-1 flex hidden"
+    >
+      <button
+        class="flex items-center justify-center rounded-md focus:outline-none py-1 px-3 gap-2 cursor-pointer transition-all ml-4 bg-gray-200 text-gray-500"
+        disabled=""
+      >
+        <div
+          class="transition-opacity opacity-35"
+        >
+          <img
+            alt="icon"
+            src="/src/assets/maximize-2.svg"
+          />
+        </div>
+        Open
+      </button>
+      <button
+        class="flex items-center justify-center rounded-md focus:outline-none py-1 px-3 gap-2 cursor-pointer transition-all ml-4 bg-transparent border-2 border-gray-200 text-gray-500"
+        disabled=""
+      >
+        <div
+          class="transition-opacity opacity-35"
+        >
+          <img
+            alt="icon"
+            src="/src/assets/calendar.svg"
+          />
+        </div>
+        Today
+      </button>
+      <button
+        class="flex items-center justify-center rounded-md focus:outline-none py-1 px-3 gap-2 cursor-pointer transition-all ml-1 bg-transparent border-2 border-gray-200 text-gray-500"
+        disabled=""
+      >
+        <div
+          class="transition-opacity opacity-35"
+        >
+          <img
+            alt="icon"
+            src="/src/assets/unlock.svg"
+          />
+        </div>
+        Public
+      </button>
+      <button
+        class="flex items-center justify-center rounded-md focus:outline-none py-1 px-3 gap-2 cursor-pointer transition-all ml-1 bg-transparent border-2 border-gray-200 text-gray-500"
+        disabled=""
+      >
+        <div
+          class="transition-opacity opacity-35"
+        >
+          <img
+            alt="icon"
+            src="/src/assets/sun.svg"
+          />
+        </div>
+        Highlight
+      </button>
+      <button
+        class="flex items-center justify-center rounded-md focus:outline-none py-1 px-3 gap-2 cursor-pointer transition-all ml-1 bg-transparent border-2 border-gray-200 text-gray-500"
+        disabled=""
+      >
+        <div
+          class="transition-opacity opacity-35"
+        >
+          <img
+            alt="icon"
+            src="/src/assets/circle.svg"
+          />
+        </div>
+        Estimation
+      </button>
+      <button
+        class="flex items-center justify-center rounded-md focus:outline-none py-1 px-3 gap-2 cursor-pointer transition-all ml-auto bg-gray-200"
+      >
+        Cancel
+      </button>
+      <button
+        class="flex items-center justify-center rounded-md focus:outline-none py-1 px-3 gap-2 cursor-pointer transition-all ml-1 mr-4 bg-blue-500 text-white bg-gray-200 text-gray-500"
+        disabled=""
+      >
+        Ok
+      </button>
+    </div>
+  </div>
+</div>
+`;
